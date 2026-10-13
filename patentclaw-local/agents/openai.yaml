@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文专利草稿 原理与真实效果"
+  short_description: "确认四份推荐交付，以原理介绍为中心，保留证据和专业可编辑附图，保密材料禁止外传"
+  default_prompt: "使用 $patentclaw-local，先确认需要几份文件，再以原理和真实效果为中心整理本地技术材料，保留证据、专业可编辑图与保密边界。"

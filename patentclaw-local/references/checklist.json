@@ -1,0 +1,276 @@
+{
+  "checklist_version": "cn-invention-checklist/1.0",
+  "repository_commit": "0b696c8fcfbe110bba6f8fc7ff7b49c41fbdb2ce",
+  "checks": [
+    {
+      "check_id": "EV-01",
+      "dimension": "证据可追溯性",
+      "title": "核心章节具有证据映射",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "总体方案、有益效果和实施方式应能关联原论文或Generator证据。",
+      "dimension_key": "evidence_traceability"
+    },
+    {
+      "check_id": "EV-02",
+      "dimension": "证据可追溯性",
+      "title": "数值与实验结论可逐项追溯",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "参数、样本量、实验结果、比较结论和统计量应有直接证据。",
+      "dimension_key": "evidence_traceability"
+    },
+    {
+      "check_id": "FC-01",
+      "dimension": "事实一致性",
+      "title": "技术事实与原始材料一致",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "交底书的对象、步骤、公式、参数、模型和实验事实不得改变原意。",
+      "dimension_key": "factual_consistency"
+    },
+    {
+      "check_id": "FC-02",
+      "dimension": "事实一致性",
+      "title": "机理与效果使用审慎表述",
+      "severity": "minor",
+      "evaluator": "llm",
+      "criterion": "推测性解释不得写成已经证实的确定机理或普遍效果。",
+      "dimension_key": "factual_consistency"
+    },
+    {
+      "check_id": "UE-01",
+      "dimension": "无依据扩写",
+      "title": "不存在无依据技术扩写",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "不得补造原材料未披露的部件、接口、参数、步骤、附图内容或应用范围。",
+      "dimension_key": "unsupported_expansion"
+    },
+    {
+      "check_id": "CF-01",
+      "dimension": "完整性与形式",
+      "title": "必要章节完整",
+      "severity": "critical",
+      "evaluator": "rule",
+      "criterion": "技术领域、背景技术、技术问题、技术方案、有益效果和实施方式均不得缺失。",
+      "dimension_key": "completeness_form"
+    },
+    {
+      "check_id": "CF-02",
+      "dimension": "完整性与形式",
+      "title": "发明名称简明准确",
+      "severity": "minor",
+      "evaluator": "rule",
+      "criterion": "名称应体现技术主题和类型，且不超过策略配置的常规长度。",
+      "dimension_key": "completeness_form"
+    },
+    {
+      "check_id": "TL-01",
+      "dimension": "技术逻辑闭环",
+      "title": "技术问题来源明确",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "技术问题应能从现有技术缺陷中导出。",
+      "dimension_key": "technical_logic"
+    },
+    {
+      "check_id": "TL-02",
+      "dimension": "技术逻辑闭环",
+      "title": "总体方案形成可执行技术链",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "总体方案应分解为足够步骤，并明确输入、处理关系和输出。",
+      "dimension_key": "technical_logic"
+    },
+    {
+      "check_id": "TL-03",
+      "dimension": "技术逻辑闭环",
+      "title": "问题、特征与效果形成因果闭环",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "每项主要效果应能对应解决的问题和产生该效果的技术特征。",
+      "dimension_key": "technical_logic"
+    },
+    {
+      "check_id": "EN-01",
+      "dimension": "充分公开",
+      "title": "至少具有一个实施例",
+      "severity": "critical",
+      "evaluator": "rule",
+      "criterion": "交底书至少应包含一个具体实施方式。",
+      "dimension_key": "enablement"
+    },
+    {
+      "check_id": "EN-02",
+      "dimension": "充分公开",
+      "title": "实施例达到基本详尽度",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "实施方式应具有足够的流程、条件、参数和结果说明。",
+      "dimension_key": "enablement"
+    },
+    {
+      "check_id": "EN-03",
+      "dimension": "充分公开",
+      "title": "已知技术缺口已经处理",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "实现发明不可缺少的Generator缺口和发明人确认项应得到补充或明确处理。",
+      "dimension_key": "enablement"
+    },
+    {
+      "check_id": "EN-04",
+      "dimension": "充分公开",
+      "title": "核心算法和运行步骤可重复实施",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "算法输入、计算规则、关键条件、输出和异常处理应足以让本领域人员实现。",
+      "dimension_key": "enablement"
+    },
+    {
+      "check_id": "CS-01",
+      "dimension": "保护范围支撑",
+      "title": "关键必要技术特征已提炼",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "应明确解决技术问题不可缺少的特征及相互关系。",
+      "dimension_key": "claim_support"
+    },
+    {
+      "check_id": "CS-02",
+      "dimension": "保护范围支撑",
+      "title": "替代实施方式和参数层级已整理",
+      "severity": "note",
+      "evaluator": "rule",
+      "criterion": "应整理有依据的等效手段、可选步骤和参数范围。",
+      "dimension_key": "claim_support"
+    },
+    {
+      "check_id": "CS-03",
+      "dimension": "保护范围支撑",
+      "title": "概括范围受到说明书支持",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "方法、系统、介质及上位概括均应由实施方式和证据支持。",
+      "dimension_key": "claim_support"
+    },
+    {
+      "check_id": "ES-01",
+      "dimension": "可专利客体",
+      "title": "方案属于技术性解决方案",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "方案应使用技术手段解决技术问题并获得技术效果，而非仅为规则或商业目的。",
+      "dimension_key": "eligible_subject"
+    },
+    {
+      "check_id": "UN-01",
+      "dimension": "单一性",
+      "title": "共同技术构思可机械识别",
+      "severity": "note",
+      "evaluator": "rule",
+      "criterion": "多个问题和创新点之间应具有可识别的共同技术联系。",
+      "dimension_key": "unity"
+    },
+    {
+      "check_id": "UN-02",
+      "dimension": "单一性",
+      "title": "各保护主题具有同一总的发明构思",
+      "severity": "minor",
+      "evaluator": "llm",
+      "criterion": "方法、系统、介质及多个方案应共享相同或相应的特定技术特征。",
+      "dimension_key": "unity"
+    },
+    {
+      "check_id": "CO-01",
+      "dimension": "一致性",
+      "title": "核心术语统一",
+      "severity": "minor",
+      "evaluator": "rule",
+      "criterion": "同一技术特征应使用统一名称并在首次出现时定义简称。",
+      "dimension_key": "consistency"
+    },
+    {
+      "check_id": "DR-01",
+      "dimension": "附图一致性",
+      "title": "正文引用与附图说明对应",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "正文引用附图时应存在对应附图说明。",
+      "dimension_key": "drawings"
+    },
+    {
+      "check_id": "DR-02",
+      "dimension": "附图一致性",
+      "title": "附图内容具有原始证据",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "附图数量、节点、关系和实验图形不得超过原始材料支持。",
+      "dimension_key": "drawings"
+    },
+    {
+      "check_id": "WR-01",
+      "dimension": "专利文体",
+      "title": "使用专利技术文体",
+      "severity": "minor",
+      "evaluator": "rule",
+      "criterion": "不得保留本文、作者、我们提出等论文叙述口吻。",
+      "dimension_key": "patent_style"
+    },
+    {
+      "check_id": "WR-02",
+      "dimension": "专利文体",
+      "title": "避免无条件绝对化表述",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "不得使用缺少评价条件的最优、唯一、完全消除等绝对化效果表述。",
+      "dimension_key": "patent_style"
+    },
+    {
+      "check_id": "WR-03",
+      "dimension": "专利文体",
+      "title": "相对与不确定用语边界清楚",
+      "severity": "minor",
+      "evaluator": "rule",
+      "criterion": "适当、较高、大约、可能等词应有参照对象、测量方式或范围。",
+      "dimension_key": "patent_style"
+    },
+    {
+      "check_id": "AI-01",
+      "dimension": "AI算法专项",
+      "title": "AI输入和输出定义完整",
+      "severity": "major",
+      "evaluator": "rule",
+      "criterion": "应明确模型输入数据的技术含义以及输出格式和用途。",
+      "dimension_key": "ai_algorithm"
+    },
+    {
+      "check_id": "AI-02",
+      "dimension": "AI算法专项",
+      "title": "模型结构及训练推理边界清楚",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "应说明相关模型模块、训练或推理阶段、参数更新范围及部署边界。",
+      "dimension_key": "ai_algorithm"
+    },
+    {
+      "check_id": "AI-03",
+      "dimension": "AI算法专项",
+      "title": "算法特征披露充分",
+      "severity": "major",
+      "evaluator": "llm",
+      "criterion": "核心算法公式、变量、张量位置、损失或约束及参数选择应达到可实施程度。",
+      "dimension_key": "ai_algorithm"
+    },
+    {
+      "check_id": "AI-04",
+      "dimension": "AI算法专项",
+      "title": "算法特征与技术效果存在因果关系",
+      "severity": "minor",
+      "evaluator": "llm",
+      "criterion": "应说明算法特征如何带来计算性能或具体应用领域的可验证技术效果。",
+      "dimension_key": "ai_algorithm"
+    }
+  ]
+}
